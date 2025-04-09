@@ -1,0 +1,165 @@
+/* Apply box-sizing globally */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #dddddd;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* Ensure all elements use border-box */
+}
+
+.settings-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #dddddd;
+}
+
+.settings-menu {
+    width: 25%;
+    max-width: 300px;
+    padding: 20px;
+    background: #67a3d9;
+}
+
+.settings-menu h2 {
+    font-size: 22px;
+}
+
+.settings-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-menu li {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+}
+
+.settings-menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.settings-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #f3c4d6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.visibility-toggle, .blocked-users-list, .screen-time-setup, .profile-settings {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.visibility-toggle label, .screen-time-setup label, .profile-settings label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.visibility-toggle select, .screen-time-setup input, .profile-settings input[type="text"], .profile-settings textarea, .profile-settings select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.blocked-users-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blocked-users-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.blocked-users-list button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.blocked-users-list button:hover {
+    background: #cc0000;
+}
+
+.profile-settings textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.profile-settings button {
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-settings button:hover {
+    background: #357ABD;
+}
+
+.profile-settings #current-profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-settings #current-profile-pic img {
+    border: 2px solid #4a90e2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-settings input[type="file"] {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.settings-menu li.active {
+    background: #0671B7;
+    border-radius: 10px;
+    color: white;
+}
+
+.settings-menu li:hover {
+    background: #0671B7;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .settings-container {
+        flex-direction: column;
+    }
+
+    .settings-menu {
+        width: 100%;
+        max-width: none;
+    }
+
+    .settings-content {
+        padding: 10px;
+    }
+}

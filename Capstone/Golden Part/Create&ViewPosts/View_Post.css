@@ -1,0 +1,296 @@
+  /* Grid Container */
+.postContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Individual Post Item - Ensures Hover Works */
+.postItem {
+  position: relative; 
+  height: 300px; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden; 
+}
+
+
+.postItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Post Image */
+.postImage {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Hidden Link - Still Clickable */
+.hidden-link {
+  position: absolute; /* Ensures the link stays over the image */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1; /* Hides the link visually but keeps it clickable */
+  z-index: 0; /* Ensures it's above the image */
+}
+
+
+
+
+
+/* Overlay Items */
+
+  #overlay1{
+    margin-top: 0px; /* This is to counter the spaced margin for set for all divs */
+    transition: opacity 0.8s ease, visibility 0.8s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .overlayBackground {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  
+
+
+  /* Individual Post Items */
+  .postItem {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #070707;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  .imgContainer {
+    width: 500px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 20px;
+  }
+
+  
+  .imgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .overlayContent1{
+    display: flex;
+    gap: 10px;
+  }
+
+  .post-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-family: "DM Sans", serif;
+  }
+
+  .post-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .post-text {
+      margin-top: 10px;
+  }
+  
+  .xButton1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #222;
+    text-decoration: none;
+  }
+
+  .xButton1:hover {
+    transition: .3s ease;
+    color: #f00; /* Red on hover */
+    transform: scale(1.08);
+    
+  }
+
+  .post-actions {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .dateCreated{
+      margin-top: 10px;
+      font-size: 20px;
+  }
+  
+
+  .post-footer {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 14px;
+      gap: 232px;
+  }
+  .dateCreated {
+      font-size: 14px;
+      color: #666;
+      font-weight: bold;
+      font-family: "DM Sans", serif;
+  }
+
+ 
+
+      /* Overlay styling */
+
+
+
+  /* Comment Styling */
+
+  .noComments {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.commentList {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  border: 1px solid #050505;
+  height: 90px;
+  max-height: 90px;
+  overflow-y: auto;
+  padding-right: 10px;
+  
+}
+
+.commentSection button {
+  margin-top: 5px;
+  padding: 8px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Comment Section Layout */
+
+
+/* Comment Input */
+.commentInput {
+  width: 380px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Comment Submit Button */
+.commentButton {
+  align-items: center;
+  padding: 8px 12px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  width: 400px;
+}
+
+.commentButton:hover {
+  background: #444;
+}
+
+.commentList::-webkit-scrollbar {
+  width: 2px;
+}
+
+.commentItem p {
+  margin: 5px 0; /* Adds spacing between username and comment text */
+}
+
+/* Style for the timestamp */
+.commentItem small {
+  display: block; /* Puts the timestamp on a new line */
+  color: #777;
+  margin-top: 5px; /* Space between comment text and timestamp */
+  font-size: 12px;
+}
+
+/* Like Button Styling */
+
+.heart-icon {
+  height: 100px;
+  width: 100px;
+  background: url("../images/heart.png");
+  background-position: left;
+  cursor: pointer;
+  position: absolute;
+}
+
+.heart-bg {
+  background: rgba(255, 192, 200, 0);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease;
+}
+
+.heart-bg:hover {
+  background: rgba(255, 192, 200, 0.7);
+}
+
+.heart-icon.liked {
+  animation: like-anim 0.7s steps(28) forwards;
+}
+
+@keyframes like-anim {
+  to {
+    background-position: right;
+  }
+}

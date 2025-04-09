@@ -1,0 +1,63 @@
+DEV VERSION 1.0 CHANGELOG (Done by Dylan)
+
+REWROTE IAN LIM'S CODE TO MORE FLEXIBLE FOR header.php, ALLOWING EASIER IMPORTS (<?php import>)
+ADDED A 3 NEW FOLDER CALLED IMPORTANT, GENERAL AND IMAGES FOR THE SAKE OF SIMPLICITY AND ORGANISATION.
+RENAMED index.php TO header.php
+Removed majority of people's code to implement header.php. Double check if your css is having issue.
+
+Comment:
+Althought I have already compiled, some part might cause a little bug, so double check your part and see if you have any error.
+Don't focus on CSS now, focus on functionality first.
+Be aware some image might be missing and I've not dragged Chan's Image to IMAGE folder.
+if possible Chan can you drag your own images to the images folder since you know your code the most out of us all.
+
+
+
+===================
+DEV VERSION 2.0 CHANGELOG
+
+CHANGED CATEGORY FORMAT
+Group member's code fix
+
+Comment:
+Expect any href or a link breaks, if so make sure to refer to the newest category format.
+
+
+
+=================== !!!!!!!!!!!!!!!!
+FINAL VERSION 1.0
+
+COUNTLESS OF UPDATE HAVE BEEN MADE, SWEAT AND BLOOD POURED INTO THE CODE.
+
+Comment:
+changing css layout are now optional, Database changes is not encouraged from this point on and all the logic and phps should be done.
+
+
+
+
+=================== !!!!!!!!!!!!!!!!
+FINAL VERSION 2.0
+
+SPOTTED MINOR BUGS DURING TESTING PHASE AND MEETING, CODE SHOULD BE FIXED
+
+Comment:
+changing css layout are now optional, Database should not be CHANGED from this point onwards.
+
+
+
+=================== !!!!!!!!!!!!!!!!
+FINAL VERSION 3.0
+
+DEVELOPMENT FINISHED. WHAT'S LEFT ARE QUICK TESTING.
+
+[!!!] WHOEVER HAVE NOT DONE THEIR PART, YOU ARE ON YOUR OWN. [!!!]
+
+Comment:
+changing css layout are now optional, Database MUST NOT be CHANGED from this point onwards.
+
+
+
+=================== !!!!!!!!!!!!!!!!
+FINAL VERSION 4.0
+
+Yet to be docummented

@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#0671B7 0%, #67A3D9 30%, #FDE2ED 60%, #F3C4D6 80%, #F6ACC5 100%);
+    color: #262626;
+}
+
+/* Container for Posts */
+.ho-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 614px;
+    margin: 0 auto;
+}
+
+/* Individual Post Styling */
+.ho-post {
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    background: white;
+}
+
+/* Post Header */
+.ho-post-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+}
+
+.ho-profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+}
+
+.ho-post-header strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.post-options {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Post Image */
+.ho-post-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ho-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px;
+    border-bottom: 1px solid #efefef;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #262626;
+}
+
+.save-btn {
+    margin-left: auto;
+}
+
+/* Likes Count */
+.likes-count {
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+/* Caption */
+.post-caption {
+    padding: 0 16px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.post-caption strong {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+/* View Comments */
+.view-comments {
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.view-comments-link {
+    font-size: 14px;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+/* Post Time */
+.post-time {
+    padding: 0 16px;
+    margin-bottom: 4px;
+    font-size: 10px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+/* Add Comment Form */
+.add-comment-form {
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #efefef;
+}
+
+.comment-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.post-comment-btn {
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.post-comment-btn.active {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 614px) {
+    .ho-container {
+        padding: 0;
+    }
+    
+    .ho-post {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+}
